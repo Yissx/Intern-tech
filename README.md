@@ -1,6 +1,17 @@
 # Intern-tech
 Problema que obtiene el mayor palíndromo dada una cadena de números y un número determinado de movimientos posibles sobre esta
 
+
+Instrucciones de uso (maybe redundantes):
+    1. Descargue el repo.
+    2. Descomprima.
+    3. En su entorno favorito...
+        3.1 Si aparece el error "Registered as a Git root, but no Git repositories were found there", abra la ventana de opciones que le ofrece el entorno y en la opción "Version-control" seleccione "None". 
+        Si no aparece esta ventana, vaya a File -> Settings -> Version-control.
+    4. Vaya al archivo main. Ejecútelo.
+    5. Introduzca los datos que se le piden (solo números).
+
+
 Elegí este problema porque fue el que me hizo sentir más familiar / cómoda, pues los problemas que suelo resolver más fácilmente se adaptan mejor a una solución lineal y sin necesidad de manejar estructuras de datos más complejas, como un árbol o grafo.
 
 
