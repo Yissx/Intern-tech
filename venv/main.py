@@ -27,7 +27,7 @@ def highestValuePalindrome(n, k, s):
         else:
             nueva_cadena.append(inicio[digito])
         digito += 1
-    print(nueva_cadena)
+    #Determinar si el resultado es un palíndromo o no
     if digito < longitud:   #No terminó de recorrerse el string
         while digito < longitud:
             if inicio[digito] != final[digito]:
