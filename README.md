@@ -9,7 +9,9 @@ Instrucciones de uso (maybe redundantes):
         3.1 Si aparece el error "Registered as a Git root, but no Git repositories were found there", abra la ventana de opciones que le ofrece el entorno y en la opción "Version-control" seleccione "None". 
         Si no aparece esta ventana, vaya a File -> Settings -> Version-control.
     4. Vaya al archivo main. Ejecútelo.
-    5. Introduzca los datos que se le piden (solo números).
+    5. Introduzca los datos que se le piden (solo números): número espacio número.
+       Ejemplo "7 1".
+    6. Introduzca una cadena de números qcuya longitud coincida con el primer valor introducido en el input anterior.
 
 
 Elegí este problema porque fue el que me hizo sentir más familiar / cómoda, pues los problemas que suelo resolver más fácilmente se adaptan mejor a una solución lineal y sin necesidad de manejar estructuras de datos más complejas, como un árbol o grafo.
