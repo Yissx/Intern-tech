@@ -15,25 +15,25 @@ def highestValuePalindrome(n, k, s):
     cambios_hechos = 0
     digito = 0
     nueva_cadena = []
+    longitud = len(inicio)
     #Convertir a palíndromo
-    while cambios_hechos < k and digito < len(inicio):
-        i = int(inicio[digito])
-        f = int(final[digito])
-        if i != f:
-            if i < f:
-                nueva_cadena.append(str(f))
+    while cambios_hechos < k and digito < longitud:
+        if inicio[digito] != final[digito]:
+            if inicio[digito] < final[digito]:
+                nueva_cadena.append(final[digito])
             else:
-                nueva_cadena.append(str(i))
+                nueva_cadena.append(inicio[digito])
             cambios_hechos += 1
         else:
-            nueva_cadena.append(str(i))
+            nueva_cadena.append(inicio[digito])
         digito += 1
-    if digito < n / 2:   #No terminó de recorrerse el string
-        while digito < len(inicio):
-            i = inicio[digito]
-            f = final[digito]
-            if i != f:
+    print(nueva_cadena)
+    if digito < longitud:   #No terminó de recorrerse el string
+        while digito < longitud:
+            if inicio[digito] != final[digito]:
                 return -1
+            else:
+                nueva_cadena.append(inicio[digito])
             digito += 1
     elif cambios_hechos < k: #Ya es un palíndromo pero aún se pueden hacer cambios
         digito = 0
@@ -50,7 +50,7 @@ def highestValuePalindrome(n, k, s):
     if medio is not None:
         if cambios_hechos < k: #Si queda un cambio para el valor de enmedio
             medio = '9'
-        nueva_cadena.insert(round((n/2) - 1), medio)
+        nueva_cadena.insert(round((n - 1) / 2), medio)
     nueva_cadena = "".join(nueva_cadena)
     return nueva_cadena
 
